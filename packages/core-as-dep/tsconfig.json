@@ -1,0 +1,37 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+           "declaration": true,
+      "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+    ],
+    "useDefineForClassFields": false,
+    "paths": {
+      "@r41/core": [
+        "../core/dist"
+      ]
+    }
+  },
+  "include": [
+    "src/*",
+    "src/**/*",
+    "src/**/**/*",
+    "types.d.ts",
+    "global.d.ts",
+    "env.d.ts",
+    "vite.d.ts",
+    "vitest/globals"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

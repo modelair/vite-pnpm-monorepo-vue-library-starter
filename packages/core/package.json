@@ -1,0 +1,53 @@
+{
+  "name": "@r41/core",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "main": "./dist/umd.js",
+  "module": "./dist/es.js",
+  "browser": "./dist/browser.js",
+  "unpkg": "./dist/min.js",
+  "types": "./dist/src/index.d.ts",
+  "typings": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/es.js",
+      "require": "./dist/umd.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build-ts": "vue-tsc --declaration --emitDeclarationOnly --excludeDirectories docs && vite build",
+    "declaration": "vue-tsc --declaration --emitDeclarationOnly "
+  },
+  "dependencies": {
+    "stylelint-config-standard-vue": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "vue": "^3.4.29",
+    "@rollup/plugin-alias": "^5.1.0",
+    "@types/node": "^18.19.3",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/test-utils": "^2.4.5",
+    "@vue/tsconfig": "^0.5.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0",
+    "glob": "^10.3.10",
+    "typescript": "^5.4.3",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}

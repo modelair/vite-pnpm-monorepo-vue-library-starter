@@ -1,0 +1,9 @@
+{
+  "name": "vite-pnpm-vue-monorepo-lib-starter",
+  "version": "1.0.0",
+  "description": "minified starter for vue library with pnpm monorepo",
+  "keywords": [],
+  "author": "dmitry zotov",
+  "license": "MIT",
+  "repository": "https://github.com/modelair/vite-pnpm-vue-monorepo-lib-starter.git"
+}

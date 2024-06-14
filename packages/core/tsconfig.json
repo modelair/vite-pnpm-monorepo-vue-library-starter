@@ -1,0 +1,63 @@
+{
+    "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "types": [
+    ],
+    "useDefineForClassFields": false,
+    "paths": {
+      "@r41/core": [
+        "./src"
+      ],
+
+    }
+//    "vueCompilerOptions": {
+    //      "experimentalResolveStyleCssClasses": "always"
+    //    }
+    // [
+    //    "src/composable/index.ts",
+    //    //    "src/renderComponent/*.ts",
+    //    //    "src/renderComponent/*.vue",
+    //    "src/renderComponent/icons/*.vue",
+    //    "src/renderComponent/index.ts",
+    //    "src/util/*",
+    //    "src/**/*.d.ts",
+    //    "src/**/*.tsx",
+    //    "src/**/*.vue",
+    //    "src/index.ts",
+    //    "types.d.ts"
+    //  ],
+  },
+  "include": [
+    //    "src/renderComponent/list-checkbox.vue"
+    "src/*",
+    "src/**/*",
+    "src/**/**/*",
+    "types.d.ts",
+    "global.d.ts",
+    "env.d.ts",
+    "vite.d.ts",
+    "vitest/globals"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
