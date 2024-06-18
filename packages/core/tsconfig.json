@@ -29,25 +29,7 @@
       ],
 
     }
-//    "vueCompilerOptions": {
-    //      "experimentalResolveStyleCssClasses": "always"
-    //    }
-    // [
-    //    "src/composable/index.ts",
-    //    //    "src/renderComponent/*.ts",
-    //    //    "src/renderComponent/*.vue",
-    //    "src/renderComponent/icons/*.vue",
-    //    "src/renderComponent/index.ts",
-    //    "src/util/*",
-    //    "src/**/*.d.ts",
-    //    "src/**/*.tsx",
-    //    "src/**/*.vue",
-    //    "src/index.ts",
-    //    "types.d.ts"
-    //  ],
-  },
   "include": [
-    //    "src/renderComponent/list-checkbox.vue"
     "src/*",
     "src/**/*",
     "src/**/**/*",
